@@ -1,0 +1,24 @@
+@mixin textSize($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin textSizeXs() {
+  @include textSize(var(--font-size-xs), var(--line-height-xs));
+}
+
+@mixin textSizeSm() {
+  @include textSize(var(--font-size-sm), var(--line-height-sm));
+}
+
+@mixin textSizeMd() {
+  @include textSize(var(--font-size-md), var(--line-height-md));
+}
+
+@mixin textSizeLg() {
+  @include textSize(var(--font-size-lg), var(--line-height-lg));
+}
+
+@mixin textSizeXl() {
+  @include textSize(var(--font-size-xl), var(--line-height-xl));
+}

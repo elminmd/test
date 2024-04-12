@@ -1,0 +1,45 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    height: 72px;
+    border-bottom: 1px solid var(--color-base-3);
+  }
+
+  &-body {
+    display: flex;
+    height: calc(100vh - 72px);
+  }
+
+  &-sidebar {
+    overflow: hidden;
+
+    > div {
+      height: 100%;
+    }
+  }
+
+  &-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: var(--base-5);
+    background-color: var(--color-base-2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout {
+    &-content {
+      padding: var(--base-7) var(--base-8);
+
+      & > div {
+        flex: 1;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+}

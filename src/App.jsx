@@ -1,7 +1,9 @@
-function App() {
+import { TrackingMap } from "./components";
+import { data } from "./consts";
+export default function App() {
   return (
-    <h1 className="App">Hello PNPMa</h1>
+
+    <TrackingMap data={data} />
   )
 }
 
-export default App
