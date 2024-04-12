@@ -15,15 +15,18 @@
     "@mui/material": "^5.15.15",
     "@mui/styled-engine-sc": "6.0.0-alpha.18",
     "@reduxjs/toolkit": "^2.2.3",
+    "formik": "^2.4.5",
     "i18next": "^23.11.1",
     "i18next-browser-languagedetector": "^7.2.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-globe.gl": "^2.27.2",
     "react-i18next": "^14.1.0",
     "react-redux": "^9.1.0",
     "sass": "^1.74.1",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@svgr/rollup": "^8.1.0",
