@@ -16,6 +16,7 @@ export default function App() {
   }, []);
   return (
     <Globe
+      backgroundColor="white"
       ref={globeEl}
       globeImageUrl={world}
       arcsData={arcsData}
