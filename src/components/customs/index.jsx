@@ -1,5 +1,5 @@
 import { Formik, Form, Field } from 'formik';
-import { TextField, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import { validationSchema } from './validation';
 import { CustomTextField } from './styled';
 
@@ -16,7 +16,19 @@ const initialValues = {
 
 export const MyForm = () => {
     const onSubmit = (values) => {
-        console.log({ values });
+        const { commerceType, autoType, engineType, price, transportExpenses, otherExpenses, engine, issueDate } = values;
+        const customsObj = {
+            commerceType,
+            autoType,
+            engineType,
+            price,
+            transportExpenses,
+            otherExpenses,
+            engine,
+            issueDate,
+        }
+
+        console.log({ customsObj });
     };
 
     return (
