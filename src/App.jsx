@@ -1,5 +1,7 @@
 // import { RGlobe } from "./components";
 import toast from 'react-hot-toast';
+import { data } from "consts"
+import { TrackingMap } from 'components';
 const delay = (ms) => new Promise((res, rej) => setTimeout(rej, ms));
 const notify = () => toast.promise(delay(1000), {
   loading: 'Loading',
@@ -13,8 +15,8 @@ export default function App() {
 
   return (
     <>
-      <h1>React Globe</h1>
-      <button onClick={notify}>Notify</button>
+      <TrackingMap {...{ data }} />
+      {/* <button onClick={notify}>Notify</button> */}
     </>
   )
 }

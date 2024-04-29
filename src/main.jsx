@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import { Suspense } from 'react'
 import App from './App.jsx'
-import "./assets/styles/styles.scss"
 import { ThemeProvider } from "@mui/material";
 import { theme } from './theme/index.js';
 import { I18nextProvider } from 'react-i18next';
